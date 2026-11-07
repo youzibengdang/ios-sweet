@@ -1,0 +1,8 @@
+name: test
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - run: echo "hello from macos-14" && uname -a && sw_vers
